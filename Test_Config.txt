@@ -1,0 +1,41 @@
+# Flag for training or running; 1 = train, 0 = run.
+TRAIN_FLAG = 0
+
+# Flag for randomizing or loading weights; 1 = rand, 0 = load.
+RAND_FLAG = 0
+
+# Flag for saving or not saving the weights to a file; 1 = save, 0 = don't save.
+SAVE_FLAG = 0
+
+# Number of connectivity layers in the network.
+NUM_LAYERS = 3
+
+# Number of nodes in the input layer, hidden layers, and output layer. Hyphen-separate the node counts.
+LAYER_CONFIG = 15000-40-10-5
+
+# Minimum and maximum value of the random weights generated.
+MIN_WEIGHT = -1.5
+MAX_WEIGHT = 1.5
+
+# Number of test cases used for training.
+TEST_CASES = 5
+
+# Maximum number of iterations before training is stopped.
+MAX_ITERATIONS = 100000
+
+# Minimum error value to be reached for training to stop.
+ERROR_THRESHOLD = 0.0002
+
+# Learning factor used in training.
+LAMBDA = 0.02
+
+# Number of iterations for keep alive message, or 0 if no output.
+KEEP_ALIVE = 10
+
+# Name of files to load/save weights to. If not loading/saving, these can be empty.
+LOAD_FILE_NAME = N-Layer_Weights.bin
+SAVE_FILE_NAME = N-Layer_Weights.bin
+
+# Name of the file to load test cases from.
+INPUT_FILE_NAME = Image_Test.txt
+OUTPUT_FILE_NAME = Image_TestOutputs.txt
